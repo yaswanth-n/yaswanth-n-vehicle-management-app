@@ -1,0 +1,126 @@
+<mat-nav-list *ngIf="!isMini">
+    <a mat-list-item routerLink="/vehicle" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="vehicle-icon">directions_car</mat-icon> Vehicle
+      </span>
+    </a>
+    <a mat-list-item routerLink="/contract" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="contract-icon">description</mat-icon> Contract
+      </span>
+    </a>
+    <a mat-list-item routerLink="/rentals" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="rentals-icon">local_taxi</mat-icon> Rentals
+      </span>
+    </a>
+    <a mat-list-item routerLink="/traffic-ticket" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="traffic-ticket-icon">warning</mat-icon> Traffic Ticket
+      </span>
+    </a>
+    <a mat-list-item routerLink="/insurance" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="insurance-icon">shield</mat-icon> Insurance
+      </span>
+    </a>
+    <a mat-list-item routerLink="/service-maintenance" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="service-maintenance-icon">build</mat-icon> Service Maintenance
+      </span>
+    </a>
+    <a mat-list-item routerLink="/tires" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="tires-icon">sports_motorsports</mat-icon> Tires
+      </span>
+    </a>
+    <a mat-list-item routerLink="/users" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="users-icon">people</mat-icon> Users
+      </span>
+    </a>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <div class="header-content">
+          <mat-icon class="reports-icon">assessment</mat-icon>
+          <mat-panel-title>Reports</mat-panel-title>
+        </div>
+      </mat-expansion-panel-header>
+
+
+      <a mat-list-item routerLink="/reports/transactions" routerLinkActive="active-link">
+        <span class="link-content">
+          <mat-icon class="transactions-icon">assessment</mat-icon> Transactions
+        </span>
+      </a>
+      <a mat-list-item routerLink="/reports/expenses" routerLinkActive="active-link">
+        <span class="link-content">
+          <mat-icon class="expenses-icon">monetization_on</mat-icon> Expenses
+        </span>
+      </a>
+    </mat-expansion-panel>
+  </mat-nav-list>
+  <mat-nav-list *ngIf="isMini">
+    <a mat-list-item routerLink="/vehicle" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="vehicle-icon">directions_car</mat-icon> 
+      </span>
+    </a>
+    <a mat-list-item routerLink="/contract" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="contract-icon">description</mat-icon> 
+      </span>
+    </a>
+    <a mat-list-item routerLink="/rentals" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="rentals-icon">drive_eta</mat-icon> 
+      </span>
+    </a>
+    <a mat-list-item routerLink="/traffic-ticket" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="traffic-ticket-icon">warning</mat-icon> 
+      </span>
+    </a>
+    <a mat-list-item routerLink="/insurance" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="insurance-icon">shield</mat-icon> 
+      </span>
+    </a>
+    <a mat-list-item routerLink="/service-maintenance" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="service-maintenance-icon">build</mat-icon>
+      </span>
+    </a>
+    <a mat-list-item routerLink="/tires" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="tires-icon">sports_motorsports</mat-icon> 
+      </span>
+    </a>
+    <a mat-list-item routerLink="/users" routerLinkActive="active-link">
+      <span class="link-content">
+        <mat-icon class="users-icon">people</mat-icon> 
+      </span>
+    </a>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <div class="header-content">
+          <mat-icon class="reports-icon">assessment</mat-icon>
+          <mat-panel-title>Reports</mat-panel-title>
+        </div>
+      </mat-expansion-panel-header>
+
+
+      <a mat-list-item routerLink="/reports/transactions" routerLinkActive="active-link">
+        <span class="link-content">
+          <mat-icon class="transactions-icon">assessment</mat-icon> 
+        </span>
+      </a>
+      <a mat-list-item routerLink="/reports/expenses" routerLinkActive="active-link">
+        <span class="link-content">
+          <mat-icon class="expenses-icon">monetization_on</mat-icon> 
+        </span>
+      </a>
+    </mat-expansion-panel>
+  </mat-nav-list>

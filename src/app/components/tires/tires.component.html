@@ -1,0 +1,146 @@
+<mat-toolbar color="primary">
+  <!-- Icons on the right side -->
+  <button mat-icon-button aria-label="Icon 1">
+    <mat-icon>add_box</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Icon 2" (click)="exportToExcel()">
+    <mat-icon>download</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Icon 3">
+    <mat-icon>search</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Icon 4">
+    <mat-icon>manage_search</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Icon 5">
+    <mat-icon>visibility</mat-icon>
+  </button>
+
+   <!-- Spacer pushes icons to the right -->
+   <span class="example-spacer"></span>
+
+  <!-- Search field on the left side -->
+  <div style="font-size: 8px">
+  <form class="example-form">
+  <mat-form-field appearance="outline">
+    <input matInput (keyup)="applyFilter($event)" placeholder="Filter">
+  </mat-form-field>
+</form>
+</div>
+ 
+</mat-toolbar>
+
+
+
+
+<div class="container">
+    
+  
+    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+  
+      <!-- User ID Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>SIRA NO</th>
+      <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+    </ng-container>
+
+    <!-- ID Column -->
+    <ng-container matColumnDef="warehouse">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>HANGİ DEPODA</th>
+      <td mat-cell *matCellDef="let element">{{ element.warehouse }}</td>
+    </ng-container>
+
+    <!-- Title Column -->
+    <ng-container matColumnDef="Note">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>NOT</th>
+      <td mat-cell *matCellDef="let element">{{ element.Note }}</td>
+    </ng-container>
+
+    <!-- Body Column -->
+    <ng-container matColumnDef="Product_Entry_Date">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>ÜRÜN GİRİŞ TARİHİ</th>
+      <td mat-cell *matCellDef="let element">{{ element.Product_Entry_Date }}</td>
+    </ng-container>
+
+    <!-- User ID Column -->
+    <ng-container matColumnDef="Brand">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>MARKA</th>
+      <td mat-cell *matCellDef="let element">{{ element.Brand }}</td>
+    </ng-container>
+
+    <!-- ID Column -->
+    <ng-container matColumnDef="Model">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>MODEL</th>
+      <td mat-cell *matCellDef="let element">{{ element.Model }}</td>
+    </ng-container>
+
+    <!-- Title Column -->
+    <ng-container matColumnDef="Type">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>TİP</th>
+      <td mat-cell *matCellDef="let element">{{ element.Type }}</td>
+    </ng-container>
+
+    <!-- Body Column -->
+    <ng-container matColumnDef="Size">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>EBAT</th>
+      <td mat-cell *matCellDef="let element">{{ element.Size }}</td>
+    </ng-container>
+
+    <!-- User ID Column -->
+    <ng-container matColumnDef="Inch">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>INC</th>
+      <td mat-cell *matCellDef="let element">{{ element.Inch }}</td>
+    </ng-container>
+
+    <!-- ID Column -->
+    <ng-container matColumnDef="DD1">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>DD1</th>
+      <td mat-cell *matCellDef="let element">{{ element.DD1 }}</td>
+    </ng-container>
+
+    <!-- Title Column -->
+    <ng-container matColumnDef="Date">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>TARİH</th>
+      <td mat-cell *matCellDef="let element">{{ element.Date }}</td>
+    </ng-container>
+
+    <!-- Body Column -->
+    <ng-container matColumnDef="Speed_and_Load_Type">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>HIZ VE YÜK TİPİ</th>
+      <td mat-cell *matCellDef="let element">{{ element.Speed_and_Load_Type }}</td>
+    </ng-container>
+
+    <!-- User ID Column -->
+    <ng-container matColumnDef="License_Plate">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>PLAKA</th>
+      <td mat-cell *matCellDef="let element">{{ element.License_Plate }}</td>
+    </ng-container>
+
+    <!-- ID Column -->
+    <ng-container matColumnDef="Number_of_Tires">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>LASTİK ADET</th>
+      <td mat-cell *matCellDef="let element">{{ element.Number_of_Tires }}</td>
+    </ng-container>
+
+    <!-- Title Column -->
+    <ng-container matColumnDef="Customer_Name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>MÜŞTERİ İSMİ</th>
+      <td mat-cell *matCellDef="let element">{{ element.Customer_Name }}</td>
+    </ng-container>
+
+    <!-- Body Column -->
+    <ng-container matColumnDef="Description">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>AÇIKLAMA</th>
+      <td mat-cell *matCellDef="let element">{{ element.Description }}</td>
+    </ng-container>
+      
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" showFirstLastButtons></mat-paginator>
+  </div>
+  
+
+  <!-- 'id','Which Warehouse','Note','Product Entry Date','Brand','Model','Type','Size','Inch','DD1','Date','Speed and Load Type','License Plate','Number of Tires','Customer Name','Description' -->

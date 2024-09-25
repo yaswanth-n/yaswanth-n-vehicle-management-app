@@ -1,0 +1,122 @@
+// mat-sidenav {
+//     width: 250px;  // Set your desired width
+//   }
+  mat-sidenav {
+    width: 250px; // Full width
+    &.mini {
+      width: 80px; // Mini width
+      .mat-list-item span {
+        display: none; // Hide text in mini mode
+      }
+    }
+  }
+  mat-icon {
+    font-size: 24px; // Adjust as necessary
+    color: #ff5722; // Example icon color
+  }
+
+  mat-nav-list {
+    &.mini {
+      width: 50px; // Adjust this width as needed
+      a {
+        justify-content: center; // Center icons in mini mode
+      }
+    }
+  }
+  
+mat-nav-list {
+    a {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        text-decoration: none;
+        color: inherit;
+
+        .link-content {
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+
+            // Remove nested styles for mat-icon here
+            mat-icon {
+                margin-right: 10px;
+                /* Space between icon and text */
+            }
+        }
+
+        // Define icon colors here based on class
+        .vehicle-icon {
+            color: blue;
+        }
+
+        .contract-icon {
+            color: green;
+        }
+
+        .rentals-icon {
+            color: orange;
+        }
+
+        .traffic-ticket-icon {
+            color: red;
+        }
+
+        .insurance-icon {
+            color: purple;
+        }
+
+        .service-maintenance-icon {
+            color: teal;
+        }
+
+        .tires-icon {
+            color: brown;
+        }
+
+        .users-icon {
+            color: navy;
+        }
+
+        .reports-icon {
+            color: green;
+        }
+
+        .transactions-icon {
+            color: blue;
+        }
+
+        .expenses-icon {
+            color: red;
+        }
+
+        &:hover {
+            background-color: #f0f0f0;
+            /* Optional hover effect */
+        }
+    }
+
+
+    .active-link {
+        mat-icon {
+            color: #ff5722;
+            /* Example color for active icons */
+        }
+
+        color: #ff5722;
+        /* Example color for active text */
+        font-weight: bold;
+    }
+
+    .header-content,
+    .list-item-content {
+        display: flex;
+        align-items: center; // Center items vertically
+    }
+
+    .reports-icon {
+        color: blue; // Your desired color
+        margin-right: 8px; // Space between icon and text
+        font-size: 20px; // Adjust size as needed
+    }
+
+}

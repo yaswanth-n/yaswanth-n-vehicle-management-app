@@ -1,0 +1,23 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;  // Full viewport height
+    background-color: hsla(240, 17%, 98%, 0.922);  // Light background for contrast   
+    border-color: black;  
+  }
+  mat-card-header {
+    background-color: gray;
+    padding: 16px;
+    color: white;  // Change the text color if needed
+  }
+
+  .row {
+    display: flex;
+    gap: 30px;
+  
+    mat-form-field {
+      width: 100%;
+      padding-top: 20px;
+    }
+  }

@@ -1,0 +1,29 @@
+.main-layout {
+    display: flex;
+    flex-direction: column; // Column layout to stack header on top
+  
+    .header {
+      height: 60px; // Adjust header height as needed
+      background-color: gray; // Your preferred background color
+    }
+  
+    .content-wrapper {
+      display: flex;
+      flex: 1; // Ensures content takes up the remaining space
+    }
+  
+    .sidebar {
+      width: 250px; // Sidebar width
+      background-color: #f4f4f4; // Sidebar background
+      padding: 10px;
+      height: calc(100vh - 60px); // Full height minus the header height
+      box-sizing: border-box;
+    }
+  
+    .main-content {
+      flex: 1; // Make this take the remaining width
+      padding: 20px; // Some padding for content
+      background-color: #fff; // Main content background
+      overflow-y: auto; // If content exceeds the height, make it scrollable
+    }
+  }

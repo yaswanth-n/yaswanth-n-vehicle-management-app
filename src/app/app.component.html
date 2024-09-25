@@ -1,0 +1,20 @@
+<ng-container *ngIf="router.url !== '/login' && router.url !== '/signup'">
+  <!-- <app-header></app-header> -->
+  <app-header></app-header>
+  <mat-sidenav-container class="main-layout">
+    <!-- Sidebar -->   
+    <mat-sidenav #sidenav mode="side" [opened]="true">
+      <app-sidebar></app-sidebar>
+    </mat-sidenav>
+    <!-- Main content area -->
+    <mat-sidenav-content>      
+      <div class="content-area">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
+</ng-container>
+
+<!-- Show only the login/signup content when on those routes -->
+<router-outlet *ngIf="router.url === '/login' || router.url === '/signup'"></router-outlet>
