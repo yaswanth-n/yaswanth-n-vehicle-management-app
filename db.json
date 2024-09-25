@@ -1,0 +1,70 @@
+{
+    "posts": [
+      { "id": "1", "title": "a title", "views": 100 },
+      { "id": "2", "title": "another title", "views": 200 }
+    ],
+    "comments": [
+      { "id": "1", "text": "a comment about post 1", "postId": "1" },
+      { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    ],
+    "profile": {
+      "name": "typicode"
+    },
+    "tires": [
+      {
+        "id":"1",
+        "warehouse" : "BZM LASTİK A.Ş",
+        "Note" : "",
+        "Product_Entry_Date" : "24-02-23",
+        "Brand" : "PETLAS",
+        "Model" : "SNOWMASTER W651",
+        "Type" : "KIŞ",
+        "Size" : "205/55R16",
+        "Inch" : "16",
+        "DD1" : "8",
+        "Date" : "42/22",
+        "Speed_and_Load_Type" : "91H",
+        "License_Plate" : "4FHP066",
+        "Number_of_Tires" : "4",
+        "Customer_Name" : "BOİS OTOMOTİV",
+        "Description" : "2024 -1. Dönem depolama kesilecek"
+      },
+      {
+        "id":"2",
+        "warehouse" : "BZM LASTİK A.Ş",
+        "Note" : "",
+        "Product_Entry_Date" : "24-02-23",
+        "Brand" : "PETLAS",
+        "Model" : "SNOWMASTER W651",
+        "Type" : "KIŞ",
+        "Size" : "205/55R16",
+        "Inch" : "16",
+        "DD1" : "8",
+        "Date" : "42/22",
+        "Speed_and_Load_Type" : "91H",
+        "License_Plate" : "4FHP066",
+        "Number_of_Tires" : "4",
+        "Customer_Name" : "BOİS OTOMOTİV",
+        "Description" : "2024 -1. Dönem depolama kesilecek"
+      },
+      {
+        "id":"3",
+        "warehouse" : "BZM LASTİK A.Ş",
+        "Note" : "",
+        "Product_Entry_Date" : "24-02-23",
+        "Brand" : "PETLAS",
+        "Model" : "SNOWMASTER W651",
+        "Type" : "KIŞ",
+        "Size" : "205/55R16",
+        "Inch" : "16",
+        "DD1" : "8",
+        "Date" : "42/22",
+        "Speed_and_Load_Type" : "93H",
+        "License_Plate" : "4FHP066",
+        "Number_of_Tires" : "4",
+        "Customer_Name" : "BOİS OTOMOTİV",
+        "Description" : "2024 -1. Dönem depolama kesilecek"
+      }
+    ]
+  }
+
